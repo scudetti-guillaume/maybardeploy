@@ -1,0 +1,42 @@
+@import '../settings.scss';
+
+.main-404 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100vh;
+width: 100%;
+align-items: center;
+color: black;
+background-color: #998f8f9a;
+// background: url('../../../public/photos-illustration/service.jpg');
+}
+
+.h1-404{
+margin-bottom: 20 px;
+
+}
+
+.logo-name-404{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 40vh;
+width: 80%;
+}
+
+.NavLink-404{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+width: 50vw;
+}
+
+.redirection-404{
+margin-left: auto;
+margin-right: auto;
+font-size: 200%;
+color:$color-3;
+
+}

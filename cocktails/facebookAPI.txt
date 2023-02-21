@@ -1,0 +1,57 @@
+Voici les étapes pour le faire :
+
+    Créez une application Facebook et obtenez une clé d'accès à l'API Facebook. Vous pouvez suivre les instructions sur la page des développeurs Facebook pour cela.
+
+    Utilisez la clé d'accès à l'API pour envoyer une requête GET à l'API Graph de Facebook pour obtenir les détails de votre page. La réponse contiendra des informations sur votre page, y compris la dernière vidéo publiée.
+
+    Analysez la réponse JSON de l'API pour extraire l'URL de la dernière vidéo publiée.
+
+    Utilisez cette URL pour afficher la vidéo dans votre application React à l'aide d'un composant vidéo ou <iframe>. Vous pouvez également inclure un lien vers votre page Facebook pour que les utilisateurs puissent voir plus de vidéos.
+
+    Utilisez un minuteur JavaScript ou un package de gestion de tâches tel que setInterval pour envoyer des requêtes périodiques à l'API Graph de Facebook et mettre à jour automatiquement la vidéo lorsque vous publiez une nouvelle vidéo sur Facebook.
+
+Voici un exemple de code pour récupérer la dernière vidéo d'une page Facebook et l'afficher dans votre application React :
+
+jsx
+
+import { useState, useEffect } from 'react';
+
+function FacebookVideo() {
+  const [videoUrl, setVideoUrl] = useState('');
+
+  useEffect(() => {
+    const getLatestVideo = async () => {
+      const response = await fetch(
+        `https://graph.facebook.com/v12.0/PAGE_ID/videos?fields=permalink_url&access_token=YOUR_ACCESS_TOKEN`
+      );
+      const data = await response.json();
+      const latestVideoUrl = data.data[0].permalink_url;
+      setVideoUrl(latestVideoUrl);
+    };
+
+    getLatestVideo();
+    const interval = setInterval(() => {
+      getLatestVideo();
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div>
+      <iframe
+        src={`${videoUrl}/embed`}
+        width="320"
+        height="320"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <p>
+        Découvrez plus de vidéos sur ma page Facebook :{' '}
+        <a href="https://www.facebook.com/MON_PAGE/">MON_PAGE</a>
+      </p>
+    </div>
+  );
+}
+
+Dans cet exemple, vous devez remplacer "PAGE_ID" par l'identifiant de votre page Facebook, et "YOUR_ACCESS_TOKEN" par votre clé d'accès à l'API Facebook. Notez que l'API Facebook a des limites de fréquence et de nombre de demandes par heure, il est donc important de ne pas envoyer trop de demandes à l'API en même temps.

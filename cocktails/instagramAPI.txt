@@ -1,0 +1,49 @@
+    Créez un compte développeur Instagram et obtenez une clé API. Vous pouvez suivre les instructions sur la page développeur d'Instagram pour cela.
+
+    Utilisez la clé API pour envoyer une requête GET à l'API d'Instagram pour obtenir les détails de votre compte. La réponse contiendra des informations sur votre compte, y compris la dernière vidéo publiée.
+
+    Analysez la réponse JSON de l'API pour extraire l'URL de la dernière vidéo publiée.
+
+    Utilisez cette URL pour afficher la vidéo dans votre application React à l'aide d'un composant vidéo ou <iframe>. Vous pouvez également inclure un lien vers votre compte Instagram pour que les utilisateurs puissent voir plus de vidéos.
+
+    Utilisez un minuteur JavaScript ou un package de gestion de tâches tel que setInterval pour envoyer des requêtes périodiques à l'API d'Instagram et mettre à jour automatiquement la vidéo lorsque vous publiez une nouvelle vidéo sur Instagram.
+
+Voici un exemple de code pour récupérer la dernière vidéo de votre compte Instagram et l'afficher dans votre application React :
+
+jsx
+
+import { useState, useEffect } from 'react';
+
+function InstagramVideo() {
+  const [videoUrl, setVideoUrl] = useState('');
+
+  useEffect(() => {
+    const getLatestVideo = async () => {
+      const response = await fetch(
+        `https://api.instagram.com/v1/users/self/media/recent/?access_token=YOUR_ACCESS_TOKEN`
+      );
+      const data = await response.json();
+      const latestVideoUrl = data.data[0].videos.standard_resolution.url;
+      setVideoUrl(latestVideoUrl);
+    };
+
+    getLatestVideo();
+    const interval = setInterval(() => {
+      getLatestVideo();
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div>
+      <video src={videoUrl} controls />
+      <p>
+        Découvrez plus de vidéos sur mon compte Instagram :{' '}
+        <a href="https://www.instagram.com/MON_COMPTE/">MON_COMPTE</a>
+      </p>
+    </div>
+  );
+}
+
+Dans cet exemple, vous devez remplacer "YOUR_ACCESS_TOKEN" par votre clé API Instagram, et "MON_COMPTE" par votre nom de compte Instagram. Notez que l'API d'Instagram a des limites de fréquence et de nombre de demandes par heure, il est donc important de ne pas envoyer trop de demandes à l'API en même temps.

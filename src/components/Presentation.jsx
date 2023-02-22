@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/page/_Presentation.scss'
+import '../style/components/_Presentation.scss'
 
 const Presentation = () => {
     return (

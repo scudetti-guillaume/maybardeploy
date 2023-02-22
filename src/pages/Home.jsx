@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Presentation from '../components/Presentation';
 import News from '../components/News';
-import Cocktails from '../components/Cocktails';
+import Cocktails from '../components/Cocktails-Main';
 import Prestations from '../components/Prestations';
 import Footer from '../components/Footer';
 import '../style/page/_Home.scss';

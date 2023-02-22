@@ -1,0 +1,185 @@
+@import "../_settings.scss";
+
+.CB-block-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    // border: $borderStyle;
+    // border-radius: $borderRadius;
+    color: $color-3;
+}
+
+.CB-block-right-cocktails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 296px;
+    margin-bottom: 1%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    color: $color-3;
+}
+
+.CB-block-right-cocktails-title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    margin-bottom: 1%;
+}
+
+.CB-block-right-cocktails-title-span {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $font-2;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.CB-block-right-cocktails-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 240px;
+    width: 100%;
+}
+
+.CB-block-right-cocktails-card-swiper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.CB-block-right-cocktails-card-slider {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.CB-block-right-cocktails-card-slider-main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.CB-block-right-cocktails-card-slider-p {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.CB-block-right-cocktails-card-slider-nom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30%;
+    width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    // margin-bottom: 20px;
+}
+
+// .CB-block-right-cocktails-card-slider-categories {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     height: 30%;
+//     width: 100%;
+//     border: $borderStyle;
+//     border-radius: $borderRadius;
+
+// }
+
+.CB-block-right-cocktails-card-slider-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    text-align: center;
+
+}
+
+.CB-block-right-cocktails-card-slider-ingredients {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 30%;
+    width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    
+}
+
+
+.CB-block-right-cocktails-card-slider-img {
+    display: flex;
+    width: 50%;
+    // height: 100%;
+    object-fit: cover;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+}
+
+.CB-block-right-mocktails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 296px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    color: $color-3;
+}
+
+.CB-block-right-mocktails-title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    margin-bottom: 1%;
+}
+
+.CB-block-right-mocktails-title-span {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $font-2;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.CB-block-right-mocktails-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+}

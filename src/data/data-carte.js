@@ -1,7 +1,7 @@
 const Boissons = [
   {
     nom: "Gin tonic",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Gin, citron vert et Tonic",
     description: "Un Cocktail très désaltérant qui se boit très frais.",
@@ -13,7 +13,7 @@ const Boissons = [
   },
   {
     nom: "Cuba libre",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Rhum, Coca cola et citron vert",
     description: "Un Cocktail classique qui se boit facilement.",
@@ -24,7 +24,7 @@ const Boissons = [
   },
   {
     nom: "Bloody Mary",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Vodka, Jus de tomate, Jus de citron jaune, Sel de cèleri, sauce Worcestershire, Tabasco",
     description: "Un Cocktail au bon goût de tomate légèrement relevé.",
@@ -35,7 +35,7 @@ const Boissons = [
   },
   {
     nom: "Mojito",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Rhum, Citron vert, feuilles de menthe, sirop simple et perrier",
     description: "Un Cocktail traditionnel qui fait toujours son effet.",
@@ -46,7 +46,7 @@ const Boissons = [
   },
   {
     nom: "Pina Colada",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Rhum, Eau ou crème de coco et Jus d’ananas",
     description: "Un Cocktail aux saveur exotiques qui rappelle les vacances.",
@@ -57,7 +57,7 @@ const Boissons = [
   },
   {
     nom: "Moscow Mule",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Vodka, Ginger beer et citron vert",
     description: "Un Cocktail aux saveurs de gingembre relevé grâce au citron.",
@@ -68,7 +68,7 @@ const Boissons = [
   },
   {
     nom: "Sex On The Beach",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Vodka, Jus d’ananas, Jus de cranberry, crème de pêche et crème de framboise",
     description: "Un Cocktail aux saveurs exotiques qui rappelle les vacances.",
@@ -79,7 +79,7 @@ const Boissons = [
   },
   {
     nom: "Spritz",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Campari, Prosecco et Tonic",
     description: "Un Cocktail pétillant avec une pointe d’amertume.",
@@ -91,7 +91,7 @@ const Boissons = [
 
   {
     nom: "Tequila Sunrise",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "classique",
     ingredients: "Tequila,Jus de citron jaune, Sirop de grenadine",
     description: "Un Cocktail aussi beau que bon.",
@@ -103,7 +103,7 @@ const Boissons = [
   },
   {
     nom: "Voironnais",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "creation",
     ingredients: "Chartreuse verte, Limoncello, Citron vert,Top perrier",
     description: "Un Cocktail au bon goût de chartreuse, sublimé grâce aux saveurs citronnées.",
@@ -115,7 +115,7 @@ const Boissons = [
   },
   {
     nom: "Buanafrai",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "creation",
     ingredients: "Malibu,Jus de banane,Jus de fraise,Citron jaune",
     description:"Un Cocktail au goût de fraise prononcé souligné par une saveur à la coco.",
@@ -127,7 +127,7 @@ const Boissons = [
 
   {
     nom: "Go Blue",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "creation",
     ingredients: "Vodka, Jus de goyave,Jus de pomme",
     description: "Un Cocktail fruité cachant la force de la Vodka.",
@@ -139,7 +139,7 @@ const Boissons = [
 
   {
     nom: "tsikito",
-    categories: "cocktail",
+    categorie: "cocktail",
     originalite: "creation",
     ingredients: "Liqueur de vanille Tsiky, Citron vert,Feuille de menthe,Rhum blanc, Perrier",
     description: "Un Cocktail type Mojito sublimé par une liqueur gourmande à la vanille.",
@@ -150,7 +150,7 @@ const Boissons = [
   },
   {
     nom: "Apple Mojito",
-    categories: "mocktail",
+    categorie: "mocktail",
     originalite: "classique",
     description: "«Un Mocktail au bon goût de pomme rappelant le fameux Mojito.",
     ingredients: "Jus de pomme, Citron vert, Sirop simple, Menthe, Tonic",
@@ -205,7 +205,6 @@ const Boissons = [
     preparation: "Préparation au shaker, servie dans un verre type Collins avec des glaçons pleins.",
     quantity: "18 cl",
     image: "./photos-mocktail/dernierecrea.jpg",
-
   },
   {
     nom: "Macumba",
@@ -234,8 +233,8 @@ const Boissons = [
   },
   {
     nom: "fraise basilic",
-    originalite: "classique",
     categories: "mocktail",
+    originalite: "classique",
     description: "Un Mocktail pétillant aux saveurs légères et très désaltérant.",
     ingredients: "Jus de fraise,Sirop de basilic,Citron jaune,Eau pétillante",
     decoration: "Rondelle de citron.",
@@ -247,7 +246,7 @@ const Boissons = [
   {
     nom: "Macumba",
     originalite: "classique",
-    categories: "mocktail",
+    categorie: "mocktail",
     description: "Un Mocktail aux saveurs fruitées qui conviendra à tout le monde.",
     ingredients: "Jus de framboise,Jus de fraise,Jus d'orange,Jus de pomme",
     decoration: "Tranche d'ananas.",

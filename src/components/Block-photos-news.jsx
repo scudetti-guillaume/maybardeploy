@@ -1,5 +1,5 @@
 import React from 'react';
-import "../style/components/_Block-photos.scss";
+import "../style/components/_Block-photos-news.scss";
 
 
 const Blockphotos = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Blockphoto from '../components/Block-photos';
+import Blockphoto from './Block-photos-news';
 import BlockTwitter from '../components/Block-twitter';
 import '../style/components/_News.scss';
 

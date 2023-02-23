@@ -1,1 +1,195 @@
 @import "../_settings.scss";
+
+.Presta-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    height: 900px;
+    width: 80%;
+}
+
+.Presta-block-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    color: $color-2
+}
+
+.Presta-block-title-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    // border: $borderStyle;
+    // border-radius: $borderRadius;
+}
+
+// .Presta-block-title-btn{
+// display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 20%;
+//     height: 100%;
+//     border: $borderStyle;
+//     border-radius: $borderRadius;
+// }
+
+.Presta-block-decription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    padding: 5px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+
+}
+
+.Presta-block-decription-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: $color-2;
+}
+
+
+.Presta-block-decription-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    color: $color-2;
+    font-size: larger;
+    font-weight: 700;
+    font-kerning: none;
+    font-family: $font-2;
+}
+
+
+
+.Presta-footer-navlink {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 55px;
+}
+
+
+.Presta-footer-navlink-reseau {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border: $borderStyle;
+    border-radius:$borderRadius;
+    color: $color-3;
+}
+
+
+.Presta-footer-navlink-reseau-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    animation: form-btn 4s linear infinite;
+
+}
+
+.Presta-footer-navlink-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    // border: $borderStyle;
+    // border-radius: $borderRadius;
+}
+
+.Presta-block-decription-Navlink-btn{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+.Presta-block-decription-btn-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    color: $color-3;
+
+}
+
+.Presta-footer-social-icon-fb {
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+}
+
+.Presta-footer-social-icon-insta {
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.Presta-footer-logo-facebook {
+    width: 40px;
+    height: 40px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b5998;
+}
+
+.Presta-footer-logo-insta {
+    width: 40px;
+    height: 40px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background-logo-instagram
+}
+
+.Presta-block-photo-grid{
+width: 100%;
+height: 70%;
+background-color: #fff;
+border: $borderStyle;
+border-radius: $borderRadius;
+background-color: $color-3;
+}

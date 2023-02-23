@@ -11,7 +11,7 @@ height: 1000px;
 border: 2px solid red;
 border-radius: $borderRadius;
 padding-top: 5px;
-background: linear-gradient(to right, #febd01, #d87011, #951a14, )
+background:$background-maybar
 }
 
 .News-block-titre{
@@ -86,7 +86,7 @@ border-radius: $borderRadius;
 display: flex;
 justify-content: center;
 align-items: center;
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+background: $background-logo-instagram
 }
 
 .News-social-icon-fb{

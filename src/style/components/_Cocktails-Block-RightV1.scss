@@ -3,7 +3,7 @@
 .CB-block-right {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 100%;
     // border: $borderStyle;
     // border-radius: $borderRadius;
@@ -24,7 +24,7 @@
 .CB-block-right-cocktails-title {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 45px;
     border: $borderStyle;
     border-radius: $borderRadius;
     margin-bottom: 1%;
@@ -58,6 +58,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+
 }
 
 .CB-block-right-cocktails-card-slider {
@@ -67,6 +68,9 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+    background-size: cover;
+    border: $borderStyle;
+    border-radius: $borderRadius;
 }
 
 .CB-block-right-cocktails-card-slider-main {
@@ -90,10 +94,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 30%;
+    height: 15%;
     width: 100%;
     border: $borderStyle;
     border-radius: $borderRadius;
+    background-color: #490909;
     // margin-bottom: 20px;
 }
 
@@ -112,12 +117,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
+    height: 40%;
     width: 100%;
     border: $borderStyle;
     border-radius: $borderRadius;
     text-align: center;
-
 }
 
 .CB-block-right-cocktails-card-slider-ingredients {
@@ -125,19 +129,20 @@
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    height: 30%;
+    height: 45%;
     width: 100%;
     border: $borderStyle;
     border-radius: $borderRadius;
-    
 }
 
-
 .CB-block-right-cocktails-card-slider-img {
-    display: flex;
+    display: block;
+    // align-items: center;
+    // justify-content: center;
     width: 50%;
     // height: 100%;
-    object-fit: cover;
+    // object-fit: cover;
+    background-size: cover;
     border: $borderStyle;
     border-radius: $borderRadius;
 }
@@ -155,7 +160,7 @@
 .CB-block-right-mocktails-title {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 40px;
     border: $borderStyle;
     border-radius: $borderRadius;
     margin-bottom: 1%;
@@ -163,23 +168,144 @@
 
 .CB-block-right-mocktails-title-span {
     display: flex;
-    width: 100%;
-    height: 50px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
     font-family: $font-2;
     font-style: italic;
     font-weight: bolder;
     font-size: xx-large;
 }
 
+// .CB-block-right-mocktails-card {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: row;
+//     height: 240px;
+//     width: 100%;
+// }
+
+
+// .CB-block-right-mocktails-card {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+//     width: 100%;
+//         flex-direction: row;
+//     border: $borderStyle;
+//     border-radius: $borderRadius;
+// }
+
 .CB-block-right-mocktails-card {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     height: 100%;
     width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+}
+
+.CB-block-right-mocktails-card-swiper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.CB-block-right-mocktails-card-slider {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+}
+
+.CB-block-right-mocktails-card-slider-main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.CB-block-right-mocktails-card-slider-p {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232327;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+
+    // border-radius: $borderRadius;
+}
+
+
+.CB-block-right-mocktails-card-slider-nom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    // margin-bottom: 20px;
+}
+
+// .CB-block-right-mocktails-card-slider-categories {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     height: 30%;
+//     width: 100%;
+//     border: $borderStyle;
+//     border-radius: $borderRadius;
+
+// }
+
+.CB-block-right-mocktails-card-slider-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40%;
+    width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    text-align: center;
+}
+
+.CB-block-right-mocktails-card-slider-ingredients {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
+    width: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+
+}
+
+
+.CB-block-right-mocktails-card-slider-img {
+    display: block;
+    // align-items: center;
+    // justify-content: center;
+    width: 50%;
+    // height: 100%;
+    // object-fit: cover;
+    background-size: cover;
     border: $borderStyle;
     border-radius: $borderRadius;
 }

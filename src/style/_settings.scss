@@ -12,68 +12,115 @@ $color-5: #36D0EA;
 $white: #ddd;
 $black: #333;
 
-$borderStyle :2px solid $color-3;
+
+$background-maybar: linear-gradient(to top right, #febd01, #d87011, #951a14, );
+$background-body : linear-gradient(to bottom, #17181b, #113e5e);
+$background-reservation : linear-gradient(to right, #febd01 0%, #d87011 20%, #af13b1 40%, #0f0 60%, #f00 80%, #febd01 100%);
+$background-reservation-v1 : linear-gradient(to right, #f00 0%, #f00 25%, #00f 25%, #00f 50%, #0f0 50%, #0f0 75%, #f00 75%, #f00 100%);
+$background-logo-instagram : radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+
+$borderStyle :1px solid $color-3;
 $borderRadius: 25px;
 $shadow: 0 1px 3px #333;
 $minHeight: 95vh;
 
+@keyframes form-btn {
+  0% {
+    background: $background-reservation;
+    background-position: -10em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  50% {
+    background: $background-reservation;
+    // background-position: 0 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    background: $background-reservation;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: 16em;
+  }
+}
+
+
+
+
+
 @mixin verticalCenter {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  margin-left:auto ;
-  margin-right: auto ;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1200px;
   font-family: $font-1;
   color: $black;
 
 }
+
 .body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  margin-left:auto ;
-  margin-right: auto ;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1200px;
   font-family: $font-1;
   color: $black;
-  background: linear-gradient(to bottom, #4f4d4a, #2c3134);
+  background: $background-body;
 }
+
 button {
   cursor: pointer;
 }
+
 li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
   color: $black;
   cursor: pointer;
 }
+
 a:visited {
-  color:$black;
+  color: $black;
 }
-.home, .contact {
+
+.home,
+.contact {
   display: flex;
 
-  @media screen and (max-width: 850px){
+  @media screen and (max-width: 850px) {
     display: block !important;
   }
 }
+
 // .homeContent, .knowledgesContent, .portfolioContent, .contactContent {
 //   margin-left: .4rem;
 

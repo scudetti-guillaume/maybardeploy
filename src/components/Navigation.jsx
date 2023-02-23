@@ -25,18 +25,18 @@ const Navigation = () => {
                 <li className='Nav-li'>
                     <div className='Nav-contact'>Contact</div>
                 </li >
-                <NavLink to="#" >
+                <NavLink to="https://www.facebook.com/MaybarMobile" target='_blank'>
                     <li className='.Nav-li-icon'>
                         <div className='Nav-div-social-fb'><img className='Nav-social-icon-fb' src="./icons/facebook-f.svg" alt='facebook icon' /></div>
                     </li>
                 </NavLink>
-                <NavLink to="#" >
+                <NavLink to="https://www.instagram.com/maybarmobile/" target='_blank' >
                     <li className='.Nav-li-icon' >
                         <div className='Nav-div-social-instagram'><img className='Nav-social-icon-insta' src="./icons/instagram.svg" alt='instagram icon' /></div>
                     </li>
                 </NavLink>
             </ul>
-
+          
         </div>
     );
 };

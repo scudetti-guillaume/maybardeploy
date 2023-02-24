@@ -1,6 +1,7 @@
 import React from 'react';
 import drinkcard from '../data/data-carte.js';
-import { Navigation, Pagination, Controller, Scrollbar, A11y, EffectCards, EffectCoverflow } from 'swiper';
+import { Navigation, Pagination,  Scrollbar, EffectCoverflow } from 'swiper';
+// A11y, EffectCards, Controller,
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css/bundle';
@@ -111,9 +112,6 @@ const CocktailsBlockRightV1 = () => {
                             drinkcard.filter(drink => drink.categorie === "mocktail")
                                 .map
                                 ((mocktails, nom) => (
-
-                                    console.log(mocktails),
-
                                     <SwiperSlide className="CB-block-right-mocktails-card-slider" key={nom}>
                                         <div className="CB-block-right-mocktails-card-slider-main">
                                             <p className='CB-block-right-mocktails-card-slider-p' >
@@ -125,8 +123,6 @@ const CocktailsBlockRightV1 = () => {
                                             </p>
                                             <img className='CB-block-right-mocktails-card-slider-img' src={mocktails.image} alt={mocktails.nom} />
                                         </div>
-
-
                                     </SwiperSlide>
                                 ))}
 

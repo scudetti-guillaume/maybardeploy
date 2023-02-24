@@ -17,14 +17,16 @@ const Navigation = () => {
                     <div className='Nav-news'>News</div>
                 </li>
                 <li className='Nav-li'>
-                    <div className='Nav-menu'>Carte</div>
+                    <div className='Nav-menu'>Carte</div>        
                 </li>
                 <li className='Nav-li'>
                     <div className='Nav-presta'>Prestations</div>
                 </li>
+                <NavLink to="/contact" >
                 <li className='Nav-li'>
                     <div className='Nav-contact'>Contact</div>
                 </li >
+                </NavLink>
                 <NavLink to="https://www.facebook.com/MaybarMobile" target='_blank'>
                     <li className='.Nav-li-icon'>
                         <div className='Nav-div-social-fb'><img className='Nav-social-icon-fb' src="./icons/facebook-f.svg" alt='facebook icon' /></div>

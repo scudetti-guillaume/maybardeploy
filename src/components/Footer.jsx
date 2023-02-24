@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* <div className='Footer-Maybar'>Maybar</div> */}
                 </div>
             </NavLink>
-            <ul className='Footer-ul' >
+            <ul className='Footer-ul' > 
                 <li className='Footer-li'>
                     <div className='Footer-news'>News</div>
                 </li>
@@ -21,13 +21,17 @@ const Footer = () => {
                 <li className='Footer-li'>
                     <div className='Footer-presta'>Prestations</div>
                 </li>
+                <NavLink to="/contact" target='_blank' >
                 <li className='Footer-li'>
                     <div className='Footer-contact'>Contact</div>
                 </li >
+                </NavLink>
+                <NavLink to="/condition" target='_blank' >
                 <li className='Footer-li'>
-                    <div className='Footer-contact'>Conditions</div>
+                    <div className='Footer-condition'>Conditions</div>
                 </li >
-                <NavLink to="https://www.facebook.com/MaybarMobile" target='_blank'>
+                </NavLink>
+                <NavLink to="/carte" target='_blank'>
                     <li className='Footer-li-icon'>
                         <div className='Footer-div-social-fb'><img className='Footer-social-icon-fb' src="./icons/facebook-f.svg" alt='facebook icon' /></div>
                     </li>

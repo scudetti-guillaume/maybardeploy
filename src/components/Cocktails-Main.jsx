@@ -26,7 +26,7 @@ const Cocktails = () => {
                     <NavLink className="Cocktail-footer-navlink-dlpdf" target='_blank' to='https://cdn.website.dish.co/media/8c/16/4748575/COCKTAILS-MOCKTAILS.pdf'>
                         <button className="Cocktail-footer-navlink-btn-dlpdf">
                             <span>Télecharger la version PDF de notre carte</span>
-                            <img className='Cocktail-footer-navlink-btn-dlpdf-icon' src="" alt='facebook icon' />
+                            <img className='Cocktail-footer-navlink-btn-dlpdf-icon' src="" alt='pdf icon' />
                         </button>
                     </NavLink>
                 </div>

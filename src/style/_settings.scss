@@ -14,6 +14,7 @@ $black: #333;
 
 
 $background-maybar: linear-gradient(to top right, #febd01, #d87011, #951a14, );
+$background-maybar-p: linear-gradient(to right, #febd01, #d87011, #951a14, );
 $background-body : linear-gradient(to bottom, #17181b, #113e5e);
 $background-reservation : linear-gradient(to right, #febd01 0%, #d87011 20%, #af13b1 40%, #0f0 60%, #f00 80%, #febd01 100%);
 $background-reservation-v1 : linear-gradient(to right, #f00 0%, #f00 25%, #00f 25%, #00f 50%, #0f0 50%, #0f0 75%, #f00 75%, #f00 100%);
@@ -43,6 +44,33 @@ $minHeight: 95vh;
 
   100% {
     background: $background-reservation;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: 16em;
+  }
+}
+
+
+@keyframes backgroung-general {
+  0% {
+    background: $background-maybar;
+    background-position: -10em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  50% {
+    background:$background-maybar;
+    // background-position: 0 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    background: $background-maybar;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

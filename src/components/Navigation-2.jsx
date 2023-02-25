@@ -18,17 +18,24 @@ const Navigation = ({ scrollToComponent }) => {
                 </div>
             </NavLink>
             <ul className='Nav-ul' >
-                <li className='Nav-li' onClick={() => scrollToComponent("news-section")}>
-                    <div className='Nav-news'>News</div>
-                </li>
-                
-                <li className='Nav-li' onClick={() => scrollToComponent("cocktails-section")}>
-                        <div className='Nav-menu'>Carte</div>
+                <NavLink to="/" >
+                    <li className='Footer-li' >
+                        <div className='Footer-news'>News</div>
                     </li>
+                </NavLink>
+                
+                <NavLink to="/" >
+                    <li className='Footer-li' >
+                        <div className='Footer-menu'>Carte</div>
+                    </li>
+                </NavLink>
              
-                <li className='Nav-li' onClick={() => scrollToComponent("prestation-section")} >
-                    <div className='Nav-presta' >Prestations</div>
-                </li>
+                <NavLink to="/" >
+                    <li className='Footer-li' >
+                        <div className='Footer-presta'>Prestations</div>
+                    </li>
+
+                </NavLink>
                 {/* <NavLink to="/contact" >
                     <li className='Nav-li' onClick={() => setModalIsOpen(true)}>
                         <div className='Nav-contact'>Contact</div>

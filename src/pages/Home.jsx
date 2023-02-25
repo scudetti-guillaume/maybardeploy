@@ -18,13 +18,13 @@ const Home = () => {
         const element = document.getElementById(id);
         element.scrollIntoView({ behavior: "smooth" });
     }
-  
-  
-  
-  //* button to scroll to top
+
+
+
+    //* button to scroll to top
 
     // const [isVisible, setIsVisible] = useState(false);
-    
+
     // const toggleVisibility = () => {
     //     if (window.pageYOffset > 300) {
     //         setIsVisible(true);
@@ -32,7 +32,7 @@ const Home = () => {
     //         setIsVisible(false);
     //     }
     // };
-  
+
     // const scrollToTop = () => {
     //     window.scrollTo({ top: 0, behavior: "smooth" });
     // };
@@ -43,13 +43,13 @@ const Home = () => {
     //         window.removeEventListener("scroll", toggleVisibility);
     //     };
     // }, []);
- 
- //**end button scroll to top  */
-  
+
+    //**end button scroll to top  */
+
     return (
         <div>
-         
-            
+
+
             <header>
                 <Navigation scrollToComponent={scrollToComponent} />
             </header>
@@ -64,11 +64,11 @@ const Home = () => {
 
                 <Cocktails />
 
-                <Prestations  />
+                <Prestations />
 
             </div>
             <footer>
-                <Footer />
+                <Footer scrollToComponent={scrollToComponent} />
             </footer>
         </div>
     );

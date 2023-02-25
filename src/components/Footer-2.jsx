@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Modal from "react-modal";
 import ContactMod from './Contact-comp';
@@ -15,28 +15,24 @@ const Footer = ({ scrollToComponent }) => {
                     {/* <div className='Footer-Maybar'>Maybar</div> */}
                 </div>
             </NavLink>
-            <ul className='Footer-ul' > 
-                {/* <NavLink to="News" target='_blank'> */}
-                    <li className='Footer-li' onClick={() => scrollToComponent("news-section")}>
-                    <div className='Footer-news'>News</div>
-                </li>
-                {/* </NavLink> */}
-             
-                
-                
-                
-                {/* <NavLink to="/carte" target='_blank'> */}
-                    <li className='Footer-li' onClick={() => scrollToComponent("cocktails-section")}>
-                    <div className='Footer-menu'>Carte</div>
-                </li>
-                    {/* </NavLink> */}
-                {/* <NavLink to="/carte" target='_blank'> */}
-                    <li className='Footer-li' onClick={() => scrollToComponent("prestation-section")}>
-                    <div className='Footer-presta'>Prestations</div>
-                </li>
-                       
-                {/* </NavLink> */}
-                {/* <NavLink to="/contact" target='_blank' >
+            <ul className='Footer-ul' >
+                <NavLink to="/" >
+                    <li className='Footer-li' >
+                        <div className='Footer-news'>News</div>
+                    </li>
+                </NavLink>
+                <NavLink to="/" >
+                    <li className='Footer-li' >
+                        <div className='Footer-menu'>Carte</div>
+                    </li>
+                </NavLink>
+                <NavLink to="/" >
+                    <li className='Footer-li' >
+                        <div className='Footer-presta'>Prestations</div>
+                    </li>
+
+                </NavLink>
+                {/* <NavLink to="/" target='_blank' >
                 <li className='Footer-li'>
                     <div className='Footer-contact'>Contact</div>
                 </li >
@@ -45,13 +41,10 @@ const Footer = ({ scrollToComponent }) => {
                 <Modal className='Modale-Contact' isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}   >
                     <ContactMod closeModal={() => setModalIsOpen(false)} />
                 </Modal>
-                
-                
-                
-                <NavLink to="/condition" target='_blank' >
-                <li className='Footer-li'>
-                    <div className='Footer-condition'>Conditions</div>
-                </li >
+                <NavLink to="/condition"  >
+                    <li className='Footer-li'>
+                        <div className='Footer-condition'>Conditions</div>
+                    </li >
                 </NavLink>
                 <NavLink to="https://www.facebook.com/MaybarMobile" target='_blank'>
                     <li className='Footer-li-icon'>
@@ -64,7 +57,6 @@ const Footer = ({ scrollToComponent }) => {
                     </li>
                 </NavLink>
             </ul>
-            
         </div>
     );
 };

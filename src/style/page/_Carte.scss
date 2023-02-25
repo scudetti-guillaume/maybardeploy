@@ -1,1 +1,236 @@
 @import "../_settings.scss";
+
+.Carte-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+}
+
+.Carte-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.logo-name-carte {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+}
+
+.Carte-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: $background-reservation;
+    background-position: -10em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: $font-1;
+    font-size: 500%;
+}
+
+.Carte-container-cocktails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.Carte-container-cocktails-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: $background-reservation;
+    background-position: -10em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: $font-1;
+    font-size: 300%;
+}
+
+// .Carte-container-cocktails-listeCocktails-classique {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     // border: $borderStyle;
+//     // border-radius: $borderRadius;
+//     margin-bottom: 1%;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 1%;
+//     width: 80%;
+//     height: 250px;
+
+// }
+
+.Carte-container-cocktails-carte {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;
+    // padding: 1%;
+    width: 90%;
+    height: 250px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    color: $color-3;
+
+}
+
+.Carte-container-cocktails-carte-img {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    padding: 2%;
+
+}
+
+
+.Carte-container-cocktails-carte-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // text-align: center;
+    width: 70%;
+    height: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    padding: 2%;
+
+}
+
+.Carte-container-mocktails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.Carte-container-mocktails-title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: $background-reservation;
+    background-position: -10em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: $font-1;
+    font-size: 300%;
+}
+
+.Carte-container-mocktails-carte {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;
+    // padding: 1%;
+    width: 90%;
+    height: 250px;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    color: $color-3;
+
+}
+
+.Carte-container-mocktails-carte-img {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    padding: 2%;
+
+}
+
+
+.Carte-container-mocktails-carte-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // text-align: center;
+    width: 70%;
+    height: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    padding: 2%;
+
+}
+
+
+.Carte-container-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $color-3;
+
+}
+
+.Carte-container-tarifs-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: $background-reservation;
+    background-position: -10em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: $font-1;
+    font-size: 300%;
+}
+
+.Carte-container-tarifs-main-p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Carte-container-tarifs-p {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    padding: 1%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    font-family: $font-3;
+    font-weight: bolder;
+    font-size: 120%;
+    color: $color-5;
+
+}
+
+.Carte-container-tarifs-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+
+}

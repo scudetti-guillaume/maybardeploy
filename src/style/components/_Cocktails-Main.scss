@@ -79,6 +79,17 @@
     font-family: $font-2;
 }
 
+.Cocktail-footer-navlink-btn-tocarte-icon{
+margin-right: 2%;
+size: 20px;
+color: white;
+}
+
+.Cocktail-footer-navlink-btn-tocarte-span{
+font-size: 15px;
+
+}
+
 .Cocktail-footer-navlink-dlpdf {
     display: flex;
     justify-content: center;
@@ -101,6 +112,21 @@
     color: $white;
     font-family: $font-2;
 }
+
+.Cocktail-footer-navlink-btn-dlpdf-icon{
+margin-left: 1%;
+size: 20px;
+color: white;
+}
+
+.Cocktail-footer-navlink-btn-dlpdf-span{
+font-size: 15px;
+
+
+
+}
+
+
 
 .Cocktail-footer-navlink-block{
 display: flex;

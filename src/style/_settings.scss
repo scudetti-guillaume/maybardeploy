@@ -16,6 +16,7 @@ $black: #333;
 $background-maybar: linear-gradient(to top right, #febd01, #d87011, #951a14, );
 $background-maybar-p: linear-gradient(to right, #febd01, #d87011, #951a14, );
 $background-body : linear-gradient(to bottom, #17181b, #113e5e);
+$background-body-2 : linear-gradient(to right, #0b183d, #074673);
 $background-reservation : linear-gradient(to right, #febd01 0%, #d87011 20%, #af13b1 40%, #0f0 60%, #f00 80%, #febd01 100%);
 $background-reservation-v1 : linear-gradient(to right, #f00 0%, #f00 25%, #00f 25%, #00f 50%, #0f0 50%, #0f0 75%, #f00 75%, #f00 100%);
 $background-logo-instagram : radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -119,6 +120,18 @@ body {
   max-width: 1200px;
   font-family: $font-1;
   background: $background-body;
+}
+.body-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  font-family: $font-1;
+  background:$background-body-2;
 }
 // .body-mod {
 //   display: flex;

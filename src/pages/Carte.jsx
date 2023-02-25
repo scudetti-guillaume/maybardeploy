@@ -8,7 +8,7 @@ const Carte = () => {
     return (
         <>
             <Navigation />
-            <div className='body Carte-main'>
+            <div className='body-2 Carte-main'>
                 <div className="Carte-container">
                     <div className="Carte-header">
                         <img className='logo-name-carte' src='./icons/maybarBc.png' alt='maybar logo'></img>
@@ -27,13 +27,13 @@ const Carte = () => {
                                         <div key={index} className="Carte-container-cocktails-carte-img">
                                             <img className="Carte-container-cocktails-carte-img-size" src={cocktail.image} alt={cocktail.nom} />
                                         </div>
-                                        <div className="Carte-container-cocktails-carte-cat">
-
-
-                                        </div>
+                                        {/* <div className="Carte-container-cocktails-carte-cat"></div> */}
                                         <div className='Carte-container-cocktails-carte-texte'>
-                                            <p>{cocktail.originalite}</p>
+                                            <div className="Carte-container-cocktails-carte-cat">
                                             <h3>{cocktail.nom}</h3>
+                                            <p className='Carte-container-cocktails-carte-texte-p-originalite'>{cocktail.originalite}</p>
+                                            
+                                            </div>
                                             <p>{cocktail.description}</p>
                                             <p>{cocktail.ingredients}</p>
                                             <p>{cocktail.decoration}</p>
@@ -59,8 +59,13 @@ const Carte = () => {
 
                                         </div>
                                         <div className='Carte-container-cocktails-carte-texte'>
-                                            <p>{cocktail.originalite}</p>
-                                            <h3>{cocktail.nom}</h3>
+                                            <div className="Carte-container-cocktails-carte-cat">
+                                                <h3>{cocktail.nom}</h3>
+                                                <p className='Carte-container-cocktails-carte-texte-p-originalite'>{cocktail.originalite}</p>
+
+                                            </div>
+                                            {/* <p>{cocktail.originalite}</p>
+                                            <h3>{cocktail.nom}</h3> */}
                                             <p>{cocktail.description}</p>
                                             <p>{cocktail.ingredients}</p>
                                             <p>{cocktail.decoration}</p>
@@ -100,8 +105,16 @@ const Carte = () => {
 
                                         </div>
                                         <div className='Carte-container-mocktails-carte-texte'>
+                                            <div className="Carte-container-cocktails-carte-cat">
+                                                <h3>{mocktail.nom}</h3>
+                                                <p className='Carte-container-cocktails-carte-texte-p-originalite'>{mocktail.originalite}</p>
+
+                                            </div>
+                                        
+                                        
+{/*                                         
                                             <p>{mocktail.originalite}</p>
-                                            <h3>{mocktail.nom}</h3>
+                                            <h3>{mocktail.nom}</h3> */}
                                             <p>{mocktail.description}</p>
                                             <p>{mocktail.ingredients}</p>
                                             <p>{mocktail.decoration}</p>

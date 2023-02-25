@@ -148,6 +148,7 @@
     background-size: cover;
     border: $borderStyle;
     border-radius: $borderRadius;
+    background-color: #01011cfb;
 }
 
 .CB-block-right-mocktails {
@@ -303,12 +304,13 @@
 
 .CB-block-right-mocktails-card-slider-img {
     display: block;
-    // align-items: center;
-    // justify-content: center;
     width: 50%;
-    // height: 100%;
-    // object-fit: cover;
+    background-color: #01011cfb;
     background-size: cover;
     border: $borderStyle;
     border-radius: $borderRadius;
+    // align-items: center;
+        // justify-content: center;
+        // height: 100%;
+        // object-fit: cover;
 }

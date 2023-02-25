@@ -108,15 +108,31 @@
 .Carte-container-cocktails-carte-texte {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    // text-align: center;
+    justify-content: space-between;
+    text-align: left;
     width: 70%;
     height: 100%;
     border: $borderStyle;
     border-radius: $borderRadius;
     padding: 2%;
+    padding-bottom: 5%;
+}
+
+.Carte-container-cocktails-carte-cat{
+display: flex;
+justify-content: space-between;
+margin-top: 0;
+margin-bottom: 2%;
 
 }
+
+// .Carte-container-cocktails-carte-texte-p-originalite{
+// display: flex;
+
+
+// }
+
+
 
 .Carte-container-mocktails {
     display: flex;
@@ -165,20 +181,25 @@
 
 }
 
-
 .Carte-container-mocktails-carte-texte {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    // text-align: center;
+    justify-content: space-between;
+    text-align: left;
     width: 70%;
     height: 100%;
     border: $borderStyle;
     border-radius: $borderRadius;
     padding: 2%;
-
+    padding-bottom: 5%;
 }
 
+.Carte-container-mocktails-carte-cat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
 
 .Carte-container-options {
     display: flex;

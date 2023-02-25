@@ -40,18 +40,18 @@
     border-radius: $borderRadius;
 }
 
-.Cocktail-footer-navlink-btn{
+.Cocktail-footer-navlink-btn {
     display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 80%;
-        height: 50px;
-        margin-top: 0.5%;
-        margin-bottom: 0.5%;
-        // border: $borderStyle;
-        // border-radius: $borderRadius;
-        color: $color-3;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    // border: $borderStyle;
+    // border-radius: $borderRadius;
+    color: $color-3;
 }
 
 .Cocktail-footer-navlink-tocarte {
@@ -79,14 +79,14 @@
     font-family: $font-2;
 }
 
-.Cocktail-footer-navlink-btn-tocarte-icon{
-margin-right: 2%;
-size: 20px;
-color: white;
+.Cocktail-footer-navlink-btn-tocarte-icon {
+    margin-right: 2%;
+    size: 20px;
+    color: white;
 }
 
-.Cocktail-footer-navlink-btn-tocarte-span{
-font-size: 15px;
+.Cocktail-footer-navlink-btn-tocarte-span {
+    font-size: 15px;
 
 }
 
@@ -113,14 +113,14 @@ font-size: 15px;
     font-family: $font-2;
 }
 
-.Cocktail-footer-navlink-btn-dlpdf-icon{
-margin-left: 1%;
-size: 20px;
-color: white;
+.Cocktail-footer-navlink-btn-dlpdf-icon {
+    margin-left: 1%;
+    size: 20px;
+    color: white;
 }
 
-.Cocktail-footer-navlink-btn-dlpdf-span{
-font-size: 15px;
+.Cocktail-footer-navlink-btn-dlpdf-span {
+    font-size: 15px;
 
 
 
@@ -128,8 +128,8 @@ font-size: 15px;
 
 
 
-.Cocktail-footer-navlink-block{
-display: flex;
+.Cocktail-footer-navlink-block {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -141,16 +141,16 @@ display: flex;
 }
 
 
-.Cocktail-footer-navlink-span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        width: 80%;
-        height: 100%;
-        border: $borderStyle;
-        border-radius: $borderRadius;
-        color: $color-3;
+.Cocktail-footer-navlink-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    border: $borderStyle;
+    border-radius: $borderRadius;
+    color: $color-3;
 }
 
 .Cocktail-footer-navlink-logo {

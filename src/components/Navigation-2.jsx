@@ -5,7 +5,7 @@ import ContactMod from './Contact-comp';
 import '../style/components/_Navigation.scss'
 
 
-const Navigation = ({ scrollToComponent }) => {
+const Navigation = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     return (
@@ -18,6 +18,8 @@ const Navigation = ({ scrollToComponent }) => {
                 </div>
             </NavLink>
             <ul className='Nav-ul' >
+        
+                
                 <NavLink to="/" >
                     <li className='Footer-li' >
                         <div className='Footer-news'>News</div>

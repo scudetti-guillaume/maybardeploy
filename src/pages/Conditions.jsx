@@ -4,9 +4,11 @@ import Footer from '../components/Footer-2';
 import '../style/page/_Conditions.scss';
 
 const Conditions = () => {
+ 
+
     return (
         <>
-            <Navigation />
+            <Navigation  />
 
             <div className='body Condition-main'>
                 <img className='logo-name-condition' src='./icons/maybarBc.png' alt='maybar logo'></img>

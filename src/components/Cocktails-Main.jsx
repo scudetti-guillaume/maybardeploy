@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Cocktails = () => {
     return (
-        <div className='Cocktail-main'>
+        <div className='Cocktail-main' id='cocktails-section'>
             <div className="Cocktail-titre">
                 <h1>Nos Cocktails / Mocktails</h1>
             </div>

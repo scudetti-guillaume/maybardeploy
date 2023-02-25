@@ -2,10 +2,11 @@ import React from 'react';
 import '../style/components/_Navigation.scss'
 import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+const Navigation = ({ scrollToComponent }) => {
+
     return (
         <div className='Nav-main'>
-            <NavLink className="NavLink-block-logo"  to="/" >
+            <NavLink className="NavLink-block-logo" to="/" >
                 <div className='Nav-block-logo'>
                     <img className='Nav-logo-icon' src='./icons/maybar-header-logo.png' alt='maybar logo'></img>
                     <img className='Nav-logo-name' src='./icons/maybarBc.png' alt='maybar logo'></img>
@@ -13,19 +14,21 @@ const Navigation = () => {
                 </div>
             </NavLink>
             <ul className='Nav-ul' >
-                <li className='Nav-li'>
+                <li className='Nav-li' onClick={() => scrollToComponent("news-section")}>
                     <div className='Nav-news'>News</div>
                 </li>
-                <li className='Nav-li'>
-                    <div className='Nav-menu'>Carte</div>        
-                </li>
-                <li className='Nav-li'>
-                    <div className='Nav-presta'>Prestations</div>
+                
+                <li className='Nav-li' onClick={() => scrollToComponent("cocktails-section")}>
+                        <div className='Nav-menu'>Carte</div>
+                    </li>
+             
+                <li className='Nav-li' onClick={() => scrollToComponent("prestation-section")} >
+                    <div className='Nav-presta' >Prestations</div>
                 </li>
                 <NavLink to="/contact" >
-                <li className='Nav-li'>
-                    <div className='Nav-contact'>Contact</div>
-                </li >
+                    <li className='Nav-li'>
+                        <div className='Nav-contact'>Contact</div>
+                    </li >
                 </NavLink>
                 <NavLink to="https://www.facebook.com/MaybarMobile" target='_blank'>
                     <li className='.Nav-li-icon'>
@@ -38,7 +41,7 @@ const Navigation = () => {
                     </li>
                 </NavLink>
             </ul>
-          
+
         </div>
     );
 };

@@ -1,11 +1,17 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { NavLink } from 'react-router-dom';
+import Modal from "react-modal";
 import BlockPhotosPrestation from './Block-photos-prestation';
+import ContactMod from './Contact-comp';
 
+
+Modal.setAppElement("#root");
 
 const Prestations = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
     return (
-        <div className='Presta-main'>
+        <div className='Presta-main' id='prestation-section'>
             <div className="Presta-block-title">
                 <h1 className="Presta-block-title-h1">
                     Nos prestations
@@ -36,9 +42,14 @@ const Prestations = () => {
                         </span>
 
                         <div className="Presta-footer-navlink-logo">
-                            <NavLink className="Presta-block-decription-Navlink-btn" to="/contact" target='_blank '>
+
+                            <div className="Presta-block-decription-btn-form-mod" onClick={() => setModalIsOpen(true)} >Contact</div>
+                            <Modal className='Modale-Contact' isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}   >
+                                <ContactMod closeModal={() => setModalIsOpen(false)}  />
+                            </Modal>
+                            {/* <NavLink className="Presta-block-decription-Navlink-btn" to="/contact" target='_blank '>
                                 <div className="Presta-block-decription-btn-form">Contact</div>
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink to="https://www.facebook.com/MaybarMobile" target='_blank ' >
                                 <div className="Presta-footer-logo-facebook"><img className='Cocktail-footer-social-icon-fb' src="./icons/facebook-f.svg" alt='facebook icon' /></div>
                             </NavLink>

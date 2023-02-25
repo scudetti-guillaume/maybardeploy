@@ -54,36 +54,22 @@
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    width: 60%;
+    width: 70%;
     // font-family: $font-2;
 }
 
 .Footer-li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4vh;
-    width : 5vw;
-    border: $borderStyle; 
-    border-radius: $borderRadius;
-    font-family: $font-2;
-    background-color:$color-5;
-    cursor: pointer;
+font-family: $font-2;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 4vh;
+    // border: $borderStyle; 
+    // border-radius: $borderRadius;
+    // background-color:$color-5;
+    // cursor: pointer;
+    // padding: 1%;
 }
-
-// .Footer-news{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     width: 100%;
-//     font-family: $font-2;
-//     // margin: 1%;
-//     // padding: 1%;
-//     border: $borderStyle;
-//     border-radius: $borderRadius;
-
-// }
-
 
 
 .Footer-div-social-fb {
@@ -107,6 +93,7 @@
     align-items: center;
     background: $background-logo-instagram
 }
+
 
 .Footer-social-icon-fb {
     width: 70%;

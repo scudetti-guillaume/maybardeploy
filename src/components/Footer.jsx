@@ -12,15 +12,22 @@ const Footer = () => {
                 </div>
             </NavLink>
             <ul className='Footer-ul' > 
+                <NavLink to="News" target='_blank'>
                 <li className='Footer-li'>
                     <div className='Footer-news'>News</div>
                 </li>
+                </NavLink>
+                <NavLink to="/carte" target='_blank'>
                 <li className='Footer-li'>
                     <div className='Footer-menu'>Carte</div>
                 </li>
+                    </NavLink>
+                <NavLink to="/carte" target='_blank'>
                 <li className='Footer-li'>
                     <div className='Footer-presta'>Prestations</div>
                 </li>
+                       
+                </NavLink>
                 <NavLink to="/contact" target='_blank' >
                 <li className='Footer-li'>
                     <div className='Footer-contact'>Contact</div>

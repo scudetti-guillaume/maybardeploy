@@ -6,7 +6,7 @@ import '../style/components/_News.scss';
 
 const News = () => {
     return (
-        <div className='News-main'>
+        <div className='News-main' id='news-section' >
             <div className='News-block-titre'>
                 <div className='News-h1'>
                     <h1 className='News-h1-span'> l'actu de Maybar</h1>

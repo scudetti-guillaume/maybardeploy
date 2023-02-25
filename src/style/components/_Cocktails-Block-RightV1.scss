@@ -1,6 +1,7 @@
 @import "../_settings.scss";
 
 .CB-block-right {
+   z-index: 0;
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -74,6 +75,7 @@
 }
 
 .CB-block-right-cocktails-card-slider-main {
+    overflow: hidden;
     display: flex;
     height: 100%;
     width: 100%;

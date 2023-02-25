@@ -56,15 +56,9 @@ width : 60%;
 font-family: $font-2;
 }
 
-// .Nav-li{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 4vh;
-//     width : 10vw;
-//     border: $borderStyle;
-//     border-radius: $borderRadius;
-// }
+.Nav-li{
+ cursor: pointer;
+}
 
 .Nav-div-social-fb{
 width: 40px;

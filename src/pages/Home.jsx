@@ -8,22 +8,69 @@ import Footer from '../components/Footer';
 import '../style/page/_Home.scss';
 
 
+
+
+
+
 const Home = () => {
+
+    function scrollToComponent(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+  
+  
+  
+  //* button to scroll to top
+
+    // const [isVisible, setIsVisible] = useState(false);
+    
+    // const toggleVisibility = () => {
+    //     if (window.pageYOffset > 300) {
+    //         setIsVisible(true);
+    //     } else {
+    //         setIsVisible(false);
+    //     }
+    // };
+  
+    // const scrollToTop = () => {
+    //     window.scrollTo({ top: 0, behavior: "smooth" });
+    // };
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", toggleVisibility);
+    //     return () => {
+    //         window.removeEventListener("scroll", toggleVisibility);
+    //     };
+    // }, []);
+ 
+ //**end button scroll to top  */
+  
     return (
-        <>
+        <div>
+         
+            
             <header>
-                <Navigation />
+                <Navigation scrollToComponent={scrollToComponent} />
             </header>
             <div className='body'>
+                {/* {isVisible && (
+
+                    <button className={`scrollToTop ${isVisible ? 'show' : ''}`} onClick={scrollToTop}><i className="icon-scroll-to-top fa fa-chevron-up"></i></button>
+                )} */}
                 <Presentation />
+
                 <News />
+
                 <Cocktails />
-                <Prestations />
+
+                <Prestations  />
+
             </div>
             <footer>
                 <Footer />
             </footer>
-        </>
+        </div>
     );
 };
 

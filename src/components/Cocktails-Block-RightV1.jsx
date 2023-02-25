@@ -1,13 +1,14 @@
 import React from 'react';
 import drinkcard from '../data/data-carte.js';
-import { Navigation, Pagination,  Scrollbar, EffectCoverflow } from 'swiper';
+import { Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper';
 // A11y, EffectCards, Controller,
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css/bundle';
 
 
-const CocktailsBlockRightV1 = () => {
+const CocktailsBlockRightV1 = (props) => {
+
     return (
         <div className='CB-block-right'>
             <div className="CB-block-right-cocktails">

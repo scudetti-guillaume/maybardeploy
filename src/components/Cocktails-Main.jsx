@@ -14,6 +14,7 @@ const Cocktails = () => {
             <div className="Cocktail-container">
                 <CocktailsBlockLeft />
                 <CocktailsBlockRightV1 />
+                
             </div>
             <div className="Cocktail-footer">
 

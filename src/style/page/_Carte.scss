@@ -56,9 +56,11 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     flex-direction: column;
+    width: 100%;
+    
 }
 
 .Carte-container-cocktails-title {
@@ -94,12 +96,14 @@ display: flex;
 
 .Carte-container-cocktails-carte {
     display: flex;
+    // justify-content: center;
+    // align-items: center;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1%;
     // padding: 1%;
     width: 90%;
-    height: 250px;
+    height: 25vh;
     border: $borderStyle;
     border-radius: $borderRadius;
     color: $color-3;
@@ -151,6 +155,7 @@ margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
+    width: 100%;
 }
 
 .Carte-container-mocktails-title {
@@ -171,12 +176,14 @@ margin-bottom: 2%;
 
 .Carte-container-mocktails-carte {
     display: flex;
+    // align-items: center;
+    // justify-content: center;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1%;
     // padding: 1%;
     width: 90%;
-    height: 250px;
+    height: 25vh;
     border: $borderStyle;
     border-radius: $borderRadius;
     color: $color-3;

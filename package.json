@@ -2,7 +2,7 @@
     "homepage":"https://scudetti-guillaume.github.io/maybardeploy",
   "name": "maybar",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.5",

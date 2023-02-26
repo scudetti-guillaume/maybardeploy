@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/maybardeploy/static/css/main.ed4e1cfc.css",
-    "main.js": "/maybardeploy/static/js/main.e5b454b8.js",
+    "main.js": "/maybardeploy/static/js/main.7641a9b4.js",
     "static/media/choix.png": "/maybardeploy/static/media/choix.23ce6f4213c64b58ee78.png",
     "index.html": "/maybardeploy/index.html",
     "main.ed4e1cfc.css.map": "/maybardeploy/static/css/main.ed4e1cfc.css.map",
-    "main.e5b454b8.js.map": "/maybardeploy/static/js/main.e5b454b8.js.map"
+    "main.7641a9b4.js.map": "/maybardeploy/static/js/main.7641a9b4.js.map"
   },
   "entrypoints": [
     "static/css/main.ed4e1cfc.css",
-    "static/js/main.e5b454b8.js"
+    "static/js/main.7641a9b4.js"
   ]
 }

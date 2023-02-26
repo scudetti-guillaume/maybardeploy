@@ -1,11 +1,12 @@
 import React from 'react';
+import '../style/page/_Home.scss';
 import Navigation from '../components/Navigation';
 import Presentation from '../components/Presentation';
 import News from '../components/News';
 import Cocktails from '../components/Cocktails-Main';
 import Prestations from '../components/Prestations';
 import Footer from '../components/Footer';
-import '../style/page/_Home.scss';
+
 
 
 
@@ -47,17 +48,13 @@ const Home = () => {
     //**end button scroll to top  */
 
     return (
-        <div>
-
-
-            <header>
-                <Navigation scrollToComponent={scrollToComponent} />
-            </header>
-            <div className='body'>
+        <div className='Home-main'>
+                <Navigation scrollToComponent={scrollToComponent}  />
                 {/* {isVisible && (
 
                     <button className={`scrollToTop ${isVisible ? 'show' : ''}`} onClick={scrollToTop}><i className="icon-scroll-to-top fa fa-chevron-up"></i></button>
                 )} */}
+                <div className='body-2'>
                 <Presentation />
 
                 <News />
@@ -65,11 +62,9 @@ const Home = () => {
                 <Cocktails />
 
                 <Prestations />
-
-            </div>
-            <footer>
+                 </div>
                 <Footer scrollToComponent={scrollToComponent} />
-            </footer>
+       
         </div>
     );
 };

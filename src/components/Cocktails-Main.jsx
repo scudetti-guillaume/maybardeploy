@@ -36,8 +36,7 @@ const Cocktails = () => {
 
                 <div className="Cocktail-footer-navlink-block">
                     <span className="Cocktail-footer-navlink-span">
-                        Vous n'avez pas trouvez votre bonheur n'hésitez pas
-                        à nous envoyez vos idées ou créations.
+                        N'hésitez pas à nous envoyez vos idées de cocktail.
                     </span>
 
                     <div className="Cocktail-footer-navlink-logo">

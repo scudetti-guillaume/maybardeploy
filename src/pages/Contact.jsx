@@ -27,8 +27,8 @@ const Contact = () => {
     return (
         <>
             <Navigation />
-            <div className=" body Contact-main ">
-
+            <div className="Contact-main body-2 ">
+                
                 <div className="Contact-main-block">
                     <div className="Contact-main-block-header">
                         <img className="Contact-main-block-logo" src='./icons/maybarBc.png' alt='maybar logo'></img>

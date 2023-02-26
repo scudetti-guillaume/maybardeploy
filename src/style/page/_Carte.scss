@@ -5,8 +5,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 100%;
     height: auto;
+}
+
+.Carte-container{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
 }
 
 .Carte-header {

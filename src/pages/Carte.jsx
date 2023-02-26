@@ -1,14 +1,15 @@
 import React from 'react';
+import "../style/page/_Carte.scss";
 import Navigation from '../components/Navigation-2';
 import Footer from '../components/Footer-2';
 import drinkcard from '../data/data-carte.js';
-import "../style/page/_Carte.scss";
+
 
 const Carte = () => {
     return (
         <>
             <Navigation />
-            <div className='body-2 Carte-main'>
+            <div className='body-2 Carte-main '>
                 <div className="Carte-container">
                     <div className="Carte-header">
                         <img className='logo-name-carte' src='./icons/maybarBc.png' alt='maybar logo'></img>

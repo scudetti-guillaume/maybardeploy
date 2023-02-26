@@ -8,6 +8,8 @@ flex-direction: column;
     color: $white;
     padding: 1%;
     width: 100%;
+    overflow:auto;
+    max-height: 880px;
     // border: $borderStyle;
     // border-radius: $borderRadius;
 

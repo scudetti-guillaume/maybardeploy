@@ -14,10 +14,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/maybardeploy/" element={<Home />} />
-          <Route path='/maybardeploy/carte' element={<Carte />} />
-          <Route path='/maybardeploy/contact' element={<Contact />} />
-          <Route path='/maybardeploy/condition' element={<Conditions />} />
+          <Route path="/" element={<Home />} />
+          <Route path='/carte' element={<Carte />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/condition' element={<Conditions />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>

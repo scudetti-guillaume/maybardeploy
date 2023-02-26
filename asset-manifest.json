@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/scudetti-guillaume.github.io/maybardeploy/static/css/main.cddaa492.css",
-    "main.js": "/scudetti-guillaume.github.io/maybardeploy/static/js/main.7641a9b4.js",
+    "main.js": "/scudetti-guillaume.github.io/maybardeploy/static/js/main.e5b454b8.js",
     "static/media/choix.png": "/scudetti-guillaume.github.io/maybardeploy/static/media/choix.23ce6f4213c64b58ee78.png",
     "index.html": "/scudetti-guillaume.github.io/maybardeploy/index.html",
     "main.cddaa492.css.map": "/scudetti-guillaume.github.io/maybardeploy/static/css/main.cddaa492.css.map",
-    "main.7641a9b4.js.map": "/scudetti-guillaume.github.io/maybardeploy/static/js/main.7641a9b4.js.map"
+    "main.e5b454b8.js.map": "/scudetti-guillaume.github.io/maybardeploy/static/js/main.e5b454b8.js.map"
   },
   "entrypoints": [
     "static/css/main.cddaa492.css",
-    "static/js/main.7641a9b4.js"
+    "static/js/main.e5b454b8.js"
   ]
 }
